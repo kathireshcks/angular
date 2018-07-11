@@ -1,0 +1,60 @@
+<!-- <div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let event of events">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <p class="card-text">{{event.email}}</p>
+        <a href="#" class="btn btn-primary">Click</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{event.fullname }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ -->
+ <h2 style="text-align:center">User Profile</h2>
+
+ <div class="card">
+   <img src="http://qnimate.com/wp-content/uploads/2014/03/images2.jpg" alt="John" style="width:100%">
+   <h1>{{events[0].fullname}}</h1>
+   <p class="title">{{events[0].email}}</p>
+   <p>{{events[0].desigination}}</p>
+   <div style="margin: 24px 0;">
+     <a href="#"><i class="fa fa-dribbble"></i></a> 
+     <a href="#"><i class="fa fa-twitter"></i></a>  
+     <a href="#"><i class="fa fa-linkedin"></i></a>  
+     <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+ </div>
+ 
+
+ <div class="container">
+   <div class="row">
+     <div class="col s8 offset-2">
+       <div class="card-panel teal lighten-2">
+         <h4 class="center white-text">Inmage Library</h4>
+       </div>
+       <form #imageForm =ngForm (ngSubmit)="onSubmit(Caption,Image)" >
+         <div class="row">
+           <div class="text" #Caption ngModel name="Caption" id="caption">
+             <label for="Caption">Caption</label>
+           </div>
+           
+         </div>
+         <img [src]="imageUrl"  style="width:250px;height:200px">
+           <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)">
+           <button type="submit" class="btn-large btn-submit" [disabled]="Image.value =='' || !imageForm.valid">Submit</button>
+       </form>
+     </div>
+   </div>
+ </div>
+
+<!--
+<h1>File Upload</h1>
+<input type="file" (change)="onFileSelected($event)">
+<button type="button" (click)="onUpload()">Upload</button>
+-->

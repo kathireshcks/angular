@@ -1,0 +1,53 @@
+.container{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+.col{
+    padding:.4em 1.3em;
+}
+.color-dark{
+    background:#2885c4;
+}
+.color-light{
+    background:#57b3f1;
+}
+input.txt{
+    border:0;
+    padding:1em;
+    width:80%;
+    margin-bottom:2em;
+}
+input.btn{
+    border:0;
+    display:block;
+    padding:1em 3em;
+    background: #A5F883;
+    color:#003A61;
+    margin-bottom:1em;
+    cursor:pointer;
+}
+.life-container{
+    background: #3fa0e1;
+    padding:.5em;
+    font-weight:bold;
+    cursor:pointer;
+}
+.bg{
+    width: 100%;
+    height: 1000%; 
+    background-image: url("http://www.iea.org/media/news/2017/171113WEO2017MainImage.jpg") ;
+    background-size: 100% 100%;
+    background-position: top right;
+    
+}
+/* mat-slider {
+    width: 300px;
+  } */
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }

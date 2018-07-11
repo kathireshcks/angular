@@ -1,0 +1,33 @@
+<!--<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let event of events">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <p class="card-text">{{event.email}}</p>
+        <a href="#" class="btn btn-primary">Click</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{event.fullname }}
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<table class="table table-hover">
+  <thead>
+      <tr>
+          <td>Name</td>
+          <td>Email</td>
+          <td>Desigination</td>
+      </tr>
+  </thead>
+  <tbody>
+      
+      <tr *ngFor="let array of events">
+        <td>{{array.fullname}}</td>
+        <td>{{array.email}}</td>
+        <td>{{array.desigination}}</td>
+      </tr>
+      
+  </tbody>
+</table> 
